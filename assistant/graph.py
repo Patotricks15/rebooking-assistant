@@ -13,9 +13,11 @@ class State(TypedDict, total=False):
     question: str
     flight: str
     passages: list
+    sources: list
     seats: int | None
     booking_failed: bool
     answer: str
+
 
 
 def find_rules(state):
